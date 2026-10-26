@@ -20,15 +20,17 @@ record Employee(String name, int age){}
         .map(Employee::name)
         .toList();
 
-        // for(String name:employeeNames) System.out.println(name);
+         for(String name:employeeNames) System.out.println(name);
 
-        // Get the employee names only from the Finance department?
+         // Get the employee names only from the Finance department?
          List<String> financeEmployees = departmentStore.getOrDefault(new Department("Finance"), List.of())
          .stream()
          .map((employee) -> employee.name)
          .toList();
         
           for(String name:financeEmployees) System.out.println(name);
+
+        
 
     }
 }
