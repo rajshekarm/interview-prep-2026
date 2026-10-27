@@ -30,6 +30,12 @@ public class FirstNonRepeatedCharacter {
 
 
     }
-    
+
+// 4. Why LinkedHashMap matters
+// LinkedHashMap::new preserves the order in which characters first appear. 
+// That ensures findFirst() returns the first non-repeating character in the original string, rather than an arbitrary one.
+
+// Interview tip: Remember the distinction between map() and mapToObj() when working with IntStream. 
+// Use mapToObj() when you want to convert primitive int values into objects such as Character.
     
 }
