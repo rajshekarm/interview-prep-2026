@@ -30,7 +30,6 @@ record Employee(String name, int age){}
         
           for(String name:financeEmployees) System.out.println(name);
 
-        
-
+    
     }
 }
