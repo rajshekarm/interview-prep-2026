@@ -12,6 +12,7 @@ public class PartitionBy {
         Map<Boolean, List<Integer>> result = nums.stream()
         .collect(Collectors.partitioningBy(n->n%2==0));
 
-        // partitioningBy() always produces two Boolean groups, even when one is empty. groupingBy() supports arbitrary grouping keys and does not create groups for keys that never occur.
+        // partitioningBy() always produces two Boolean groups, even when one is empty. 
+        // groupingBy() supports arbitrary grouping keys and does not create groups for keys that never occur.
     }
 }
