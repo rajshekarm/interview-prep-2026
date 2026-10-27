@@ -14,12 +14,5 @@ public class StreamPractice {
 
         System.out.println(evenNums);
 
-
-        //2. Find duplicates in a list
-        Set<String> seen = new HashSet<>(DataStore.WORDS);
-        DataStore.WORDS.stream()
-        .filter()
-        .
-
     }
 }
