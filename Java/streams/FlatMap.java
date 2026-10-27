@@ -5,7 +5,6 @@ public class FlatMap {
 record Department(String name) {}
 
 record Employee(String name, int age){}
-
     public static void main(String[] args) {
         Map<Department, List<Employee>> departmentStore = new HashMap<>();
         departmentStore.put(new Department("Finance"), List.of(new Employee("Ramesh", 25), new Employee("Somesh", 25)));
