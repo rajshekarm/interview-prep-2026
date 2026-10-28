@@ -17,7 +17,7 @@ public class WordFrequency {
         );
 
         Map<String, Long> freq = words.stream()
-                                        .collect(Collectors.groupingBy(str->str, Collectors.counting()));
+                                        .collect(Collectors.groupingBy(str->str, TreeMap::new, Collectors.counting()));
 
         for(Map.Entry<String, Long> entry:freq.entrySet())
             System.out.println(entry.getKey() + ": " + entry.getValue());
