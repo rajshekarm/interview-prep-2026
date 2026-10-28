@@ -8,8 +8,8 @@ public class HighestPaidEmployee {
         List<Employee> employee = DataStore.employees;
 
         employee.stream()
-    .max(Comparator.comparingDouble(DataStore.Employee::salary))
-    .ifPresent(System.out::println);
+                .max(Comparator.comparingDouble(DataStore.Employee::salary))
+                .ifPresent(System.out::println);
 
         //  max() returns the Employee, not the salary
     }
